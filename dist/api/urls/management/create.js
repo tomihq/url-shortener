@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.createShortedUrl = void 0;
 const base62_1 = require("../../../helpers/base62");
 const Url_1 = __importDefault(require("../../../models/Url"));
-const config_1 = require("../../../config");
 const User_1 = __importDefault(require("../../../models/User"));
+const config_1 = require("../../../config");
 const createShortedUrl = async (req, res) => {
     const { url } = req.body;
     const shortUrl = (0, base62_1.randomStr)(7);
