@@ -9,6 +9,7 @@ Este tipo de proyectos, desde el lado más técnico suele preguntarse en entrevi
 4. Elegir una base de datos apropiada y justificar.
 5. Explicar forma de redirección al cliente al sitio web original que contiene la shortned url y justificar.
 6. Realizar un frontend básico, que utilice este repositorio como backend implementando un balanceador de carga entre ambas partes.
+7. El backend deberá estar siempre disponible, de lo contrario, todos los enlaces acortados no tendrán utilidad.
 
 ## Extra
 1. Proponer un mecanismo de seguridad para garantizar que no se está acortando una URL maliciosa.
