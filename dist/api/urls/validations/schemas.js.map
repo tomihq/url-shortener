@@ -1,0 +1,1 @@
+{"version":3,"file":"schemas.js","sourceRoot":"","sources":["../../../../src/api/urls/validations/schemas.ts"],"names":[],"mappings":";;;;;;AAAA,8CAAsB;AAET,QAAA,OAAO,GAAG;IACnB,gBAAgB,EAAE,aAAG,CAAC,MAAM,CAAC;QACzB,GAAG,EAAE,aAAG,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE;KAC/B,CAAC;IACF,eAAe,EAAE,aAAG,CAAC,MAAM,CAAC;QACxB,GAAG,EAAE,aAAG,CAAC,MAAM,EAAE,CAAC,QAAQ,EAAE;KAC/B,CAAC;CACL,CAAA"}
