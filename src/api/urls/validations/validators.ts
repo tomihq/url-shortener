@@ -7,4 +7,11 @@ export interface CreateShortUrlSchema
   }
 }
 
+export interface AboutShortedUrlSchema
+  extends ValidatedRequestSchema {
+  [ContainerTypes.Params]: {
+    url: string;
+  }
+}
+
 
