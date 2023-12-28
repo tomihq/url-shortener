@@ -4,6 +4,8 @@ import express, { Express, json, urlencoded } from 'express';
 import helmet from 'helmet';
 import apiRouter from './api/'
 import { mongoClient } from "./clients/mongodb";
+import { redirect } from './redirect';
+import { checkValidUrl } from './middlewares/urls';
 
 dotenv.config();
 mongoClient();
@@ -12,6 +14,7 @@ app.use(helmet())
 app.use(compression())
 app.use(json())
 app.use(urlencoded({ extended: false }))
+app.get('/:url', [checkValidUrl], redirect)
 app.use('/api/v1', apiRouter)
 
 
