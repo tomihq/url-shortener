@@ -75,3 +75,4 @@ Si tenemos muchas requests todo el tiempo para la creación es importante utiliz
 Usaré node.js por comodidad pero puede optarse por usar cualquier tecnología capaz de manejar solicitudes HTTP eficazmente.
 
 ## Paquetes
+node-cache: Para simular un comportamiento de un caché redis.
