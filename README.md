@@ -14,4 +14,5 @@ Este tipo de proyectos, desde el lado más técnico suele preguntarse en entrevi
 ## Extra
 1. Proponer un mecanismo de seguridad para garantizar que no se está acortando una URL maliciosa.
 2. Implementar un cron (diario) que verifique que enlaces redirigen a lugares que ya no existen y eliminarlos -> Considere utilizar microservicios.
+3. Eliminar los links luego de un cierto tiempo -> ¿Elegirías nativamente desde la base de datos o un cron? 
    
