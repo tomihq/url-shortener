@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { createValidator } from 'express-joi-validation'
-import { createUser } from "./management";
 import { schemas } from "./validations";
+import { createShortedUrl } from "./management";
 
 const validator = createValidator({
     passError: true,
@@ -10,6 +10,6 @@ const validator = createValidator({
 
 const routerWelcome = Router();
 
-routerWelcome.post('/', validator.body(schemas.createUserSchema), createUser)
+routerWelcome.post('/', validator.body(schemas.createShortedUrl), createShortedUrl)
 
 export default routerWelcome

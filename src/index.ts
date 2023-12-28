@@ -3,9 +3,10 @@ import dotenv from 'dotenv';
 import express, { Express, json, urlencoded } from 'express';
 import helmet from 'helmet';
 import apiRouter from './api/'
+import { mongoClient } from "./clients/mongodb";
 
 dotenv.config();
-
+mongoClient();
 const app: Express = express();
 app.use(helmet())
 app.use(compression())

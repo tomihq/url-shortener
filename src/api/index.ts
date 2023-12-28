@@ -1,10 +1,10 @@
 import { Router } from "express";
 
-import welcomeRouter from './welcome'
+import urlsRouter from './urls'
 
 const router = Router();
 
-router.use('/welcome', welcomeRouter)
+router.use('/urls', urlsRouter)
 
 router.use((err, req, res, next) => {
     if (err?.error?.isJoi) {

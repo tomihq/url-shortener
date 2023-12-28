@@ -1,9 +1,9 @@
 import { ContainerTypes, ValidatedRequestSchema } from 'express-joi-validation'
 
-export interface CreateUserSchema
+export interface CreateShortUrlSchema
   extends ValidatedRequestSchema {
   [ContainerTypes.Body]: {
-    name: string;
+    url: string;
   }
 }
 
